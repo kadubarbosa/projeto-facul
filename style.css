@@ -1,0 +1,60 @@
+.nav-fixa {
+    position: fixed; /* Torna a barra de navegação fixa */
+    top: 0; /* Posiciona a barra de navegação no topo da página */
+    width: 100%; /* Faz com que a barra de navegação ocupe toda a largura da página */
+    background-color: #3d0000;
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    padding: 10px 0;
+}
+
+.nav-fixa ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens da lista */
+}
+
+.nav-fixa li {
+    display: inline;
+}
+
+.nav-fixa a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 64px;
+    display: inline-flex;
+    transition: background-color 0.2s;
+}
+
+.nav-fixa a:hover {
+    background-color: #6b0202;
+}
+
+.conteudo {
+    background-color: #dad7d7;
+    padding: 20px;
+    margin: 80px 0; /* Adiciona margem superior para não sobrepor o conteúdo à barra */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+body {
+    background-image: url('crimson.jpg');
+    background-size: cover; /* Faz a imagem cobrir toda a área visível da página */
+    background-position: center; /* Posiciona a imagem no centro da página */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa durante o rolar da página */
+}
+.minha-foto {
+    position: fixed; /* Fixa no canto mesmo ao rolar a página */
+    bottom: 10px;    /* Define a distância do canto inferior */
+    right: 10px;     /* Define a distância do canto direito */
+    width: 100px;    /* Define a largura da imagem */
+    border-radius: 50%; /* Torna a imagem circular, se ela for quadrada */
+    border: 2px solid #fff; /* Adiciona uma borda branca */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+}
